@@ -12,11 +12,11 @@ def machine():
     print('your payline is: ', '\n', payline[0], payline[1], payline[2])
     print(' ')
 
-    if all_same(payline) == 'if cond':
+    if all_same(payline) == True:
         print('O KURWA WYGRAŁ JEBANY HAHA!!!')
         return True
 
-    elif all_same(payline) == 'if cond not':
+    elif all_same(payline) == False:
         print('You are a fucking loser xD')
         return False
 
