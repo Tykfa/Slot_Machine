@@ -9,7 +9,9 @@ def machine():
 
     for i in range(1, reels + 1):
         reel(i, payline, symbols)
-    print('your payline is: ', '\n', payline[0], payline[1], payline[2])
+
+    print('your payline is: ', '\n')
+    print( payline[0], payline[1], payline[2], sep=(', '))
     print(' ')
 
     if all_same(payline) == True:
@@ -27,7 +29,7 @@ def machine():
 def reel(reel_number, payline, symbols):
     for i in range(3):
         print("rolling", reel_number)
-        time.sleep(0.5)
+        time.sleep(0.1)
     payline.append(random.choice(symbols))
     print(' ')
     print(payline[-1])
