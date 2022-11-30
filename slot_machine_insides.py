@@ -36,3 +36,6 @@ def reel(reel_number, payline, symbols):
 
 def all_same(payline):
     return all(x == payline[0] for x in payline)
+
+#test
+
