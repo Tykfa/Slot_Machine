@@ -1,3 +1,7 @@
 0.0.1
     - comments added
     - version numbering
+
+0.0.2
+    - moved machine characteristics to main
+    - credit calculation introduced

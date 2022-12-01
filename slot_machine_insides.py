@@ -1,13 +1,13 @@
 import random
 import time
 
+# characteristics of machine defined
+reels = 3
+symbols = ('SEVEN' , 'bell', 'orange', 'lemon', 'twoja stara', 'PIWSKO')
+payline = []
 
-def machine():
 
-    # characteristics of machine defined
-    reels = 3
-    symbols = ('SEVEN', 'bell', 'orange', 'lemon', 'twoja stara', 'PIWSKO')
-    payline = []
+def machine(reels, symbols, payline):
 
     # activating individual reels
     for i in range(1, reels + 1):
