@@ -4,7 +4,7 @@ import time
 
 def machine():
     reels = 3
-    symbols = ('SEVEN', 'bell', 'orange', 'lemon', 'twoja stara', 'sun', 'moon', 'phone', 'dog', 'cat', 'PIWSKO')
+    symbols = ('SEVEN', 'bell', 'orange', 'lemon', 'twoja stara', 'PIWSKO')
     payline = []
 
     for i in range(1, reels + 1):
@@ -38,5 +38,3 @@ def reel(reel_number, payline, symbols):
 
 def all_same(payline):
     return all(x == payline[0] for x in payline)
-
-
