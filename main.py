@@ -1,8 +1,12 @@
 import slot_machine_insides as smi
 import calculations as calc
+import menu as mn
 
 
 def main():
+
+    mn.main_menu()
+
 
     # user inserts credits to be bet
     # bet = int(input('insert amount of credits to enter the game: '))
