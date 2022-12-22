@@ -2,16 +2,16 @@ import random
 import time
 
 # characteristics of machine defined
-reels = 3
-symbols = ('SEVEN' , 'bell', 'orange', 'lemon', 'twoja stara', 'PIWSKO')
+REELS = 3
+SYMBOLS = ('SEVEN' , 'bell', 'orange', 'lemon', 'twoja stara', 'PIWSKO')
 payline = []
 
 
-def machine(reels, symbols, payline):
+def machine(REELS, SYMBOLS, payline):
 
     # activating individual reels
-    for i in range(1, reels + 1):
-        reel(i, payline, symbols)
+    for i in range(1, REELS + 1):
+        reel(i, payline, SYMBOLS)
 
     # printing result of all draws
     print('your payline is: ', '\n')
@@ -31,7 +31,7 @@ def machine(reels, symbols, payline):
         pass
 
 
-def reel(reel_number, payline, symbols):
+def reel(reel_number, payline, SYMBOLS):
 
     # cosmetic for user representing rollin of physical reel in a machine
     for i in range(3):
@@ -39,7 +39,7 @@ def reel(reel_number, payline, symbols):
         time.sleep(0.1)
 
     # transmission of the draw result to list of results and printing individual result
-    payline.append(random.choice(symbols))
+    payline.append(random.choice(SYMBOLS))
     print(' ')
     print(payline[-1])
     print(' ')

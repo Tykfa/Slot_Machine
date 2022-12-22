@@ -1,34 +1,29 @@
-import login_screen as ls
 
 def main_menu():
 
     # program options presentation
-    print(' ', 'Welcome to slot machine main menu.',
-    '----------------------------------',
-    '1. Add credits',
-    '2. Withdraw credits',
-    '3. Start game',
-    '3. Log out',
-    '----------------------------------', sep = '\n')
+    MENU_TEXT = open('main_menu_text', 'r')
+    print(MENU_TEXT.read())
+    MENU_TEXT.close()
 
     # user inputs the choice
-    menu_choice = int(input())
+    menu_choice = 1 #int(input())
 
     if menu_choice == 1: # user_operations method that adds credits to user account
-        print(1)
+        return 'game'
 
     elif menu_choice == 2: # user_operations method that enables credits withdrawal
-        print(2)
+        print('add')
 
     elif menu_choice == 3: # running slot_machine_insides
-        print(3)
+        print('withdraw')
 
     elif menu_choice == 4: # returning to loging screen
-        print(4)
+        return 'exit'
 
     else: # forcing correct choice for menu
         print('Please, choose number from 1 to 4.')
         main_menu()
 
 
-main_menu()
+# main_menu()

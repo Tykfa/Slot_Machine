@@ -1,15 +1,12 @@
 import slot_machine_insides as smi
 
 # calculating multiplier based on machine characteristics
-multiplier = (len(smi.symbols))**(smi.reels)
+MULTIPLIER = (len(smi.SYMBOLS))**(smi.REELS)
 
 
-def winning(bet, multiplier):
+def add_credits(bet, MULTIPLIER):
     if smi.payline[1] == 'SEVEN':
-        return bet * multiplier * 7
+        return bet * MULTIPLIER * 7
     else:
-        return bet * multiplier
+        return bet * MULTIPLIER
 
-
-def losing(bet):
-    return bet; 'lost'
